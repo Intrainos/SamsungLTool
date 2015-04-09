@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 
 
 public class Main extends Activity {
@@ -14,8 +17,20 @@ public class Main extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+        Button gotoAppops = (Button) findViewById(R.id.gotoAppops);
+        gotoAppops.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent AppopsIntent = new Intent();
+                AppopsIntent.setClassName("com.android.settings", "com.android.settings.Settings");
+                AppopsIntent.setAction("android.intent.action.MAIN");
+                AppopsIntent.addCategory("android.intent.category.DEFAULT");
+                AppopsIntent.setFlags(268468224);
+                AppopsIntent.putExtra(":android:show_fragment", "com.android.settings.applications.AppOpsSummary");
+                startActivity(AppopsIntent);
+            }
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
