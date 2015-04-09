@@ -10,7 +10,6 @@ import android.widget.Button;
 
 
 public class Main extends Activity {
-    public static final int MENU1 = Menu.FIRST +0;
 
 
     @Override
@@ -30,29 +29,45 @@ public class Main extends Activity {
                 startActivity(AppopsIntent);
             }
         });
+
+        Button TouchLightSetting = (Button) findViewById(R.id.gotoTouchlightSetting);
+        TouchLightSetting.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent TouchLightSetting = new Intent(getApplicationContext(), TouchLight.class);
+                startActivity(TouchLightSetting);
+            }
+        });
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        menu.add(menu.NONE, MENU1, Menu.NONE, "Homepage");
-
-        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+
+        
+
+        /*
+        //Not Use
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about)
+        {
             return true;
+
         }
 
         return super.onOptionsItemSelected(item);
+        */
+        return false;
     }
 }
