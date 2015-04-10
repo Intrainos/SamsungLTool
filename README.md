@@ -3,4 +3,6 @@ Samsung Lollipop Hidden Menu and  Hidden Setting Tool
 
 Now on Devlopment.
 
-App ops, Touch Light, SView... maybe more.
+Now on App ops, Custom S View, Download Booster, Toolbox, 2014 Power Saving
+
+TouchLight is now on delopment.
