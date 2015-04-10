@@ -38,6 +38,67 @@ public class Main extends Activity {
             }
         });
 
+
+        Button gotoSViewWPSetting = (Button) findViewById(R.id.gotoSViewWPSetting);
+        gotoSViewWPSetting.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent gotoSViewWPSetting = new Intent();
+                gotoSViewWPSetting.setClassName("com.android.settings", "com.android.settings.SViewColor2014");
+                gotoSViewWPSetting.setAction("android.intent.action.MAIN");
+                gotoSViewWPSetting.addCategory("android.intent.category.DEFAULT");
+                gotoSViewWPSetting.setFlags(268468224);
+                startActivity(gotoSViewWPSetting);
+            }
+        });
+
+        Button gotoToolBoxSetting = (Button) findViewById(R.id.gotoToolBoxSetting);
+        gotoToolBoxSetting.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent gotoToolBoxSetting = new Intent();
+                gotoToolBoxSetting.setClassName("com.android.settings", "com.android.settings.Settings$ToolboxMenuActivity");
+                gotoToolBoxSetting.setAction("android.intent.action.MAIN");
+                gotoToolBoxSetting.addCategory("android.intent.category.DEFAULT");
+                gotoToolBoxSetting.setFlags(268468224);
+                startActivity(gotoToolBoxSetting);
+            }
+        });
+
+        Button gotoToolBoxList = (Button) findViewById(R.id.gotoToolBoxList);
+        gotoToolBoxList.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent gotoToolBoxList = new Intent();
+                gotoToolBoxList.setClassName("com.android.settings", "com.android.settings.Settings$ToolboxListActivity");
+                gotoToolBoxList.setAction("android.intent.action.MAIN");
+                gotoToolBoxList.addCategory("android.intent.category.DEFAULT");
+                gotoToolBoxList.setFlags(268468224);
+                startActivity(gotoToolBoxList);
+            }
+        });
+
+        Button gotoDownloadBoosterSetting = (Button) findViewById(R.id.gotoDownloadBoosterSetting);
+        gotoDownloadBoosterSetting.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent gotoDownloadBoosterSetting = new Intent();
+                gotoDownloadBoosterSetting.setClassName("com.android.settings", "com.android.settings.Settings$SmartBondingSettingsActivity");
+                gotoDownloadBoosterSetting.setAction("android.intent.action.MAIN");
+                gotoDownloadBoosterSetting.addCategory("android.intent.category.DEFAULT");
+                gotoDownloadBoosterSetting.setFlags(268468224);
+                startActivity(gotoDownloadBoosterSetting);
+            }
+        });
+
+        Button goto2014PowerSavingModeSetting = (Button) findViewById(R.id.goto2014PowerSavingModeSetting);
+        goto2014PowerSavingModeSetting.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent goto2014PowerSavingModeSetting = new Intent();
+                goto2014PowerSavingModeSetting.setClassName("com.android.settings", "com.android.settings.Settings$PowerSavingModeSettings2014Activity");
+                goto2014PowerSavingModeSetting.setAction("android.intent.action.MAIN");
+                goto2014PowerSavingModeSetting.addCategory("android.intent.category.DEFAULT");
+                goto2014PowerSavingModeSetting.setFlags(268468224);
+                startActivity(goto2014PowerSavingModeSetting);
+            }
+        });
+
     }
 
     @Override
@@ -55,7 +116,7 @@ public class Main extends Activity {
         int id = item.getItemId();
 
 
-        
+
 
         /*
         //Not Use
