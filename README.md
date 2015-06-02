@@ -1,4 +1,7 @@
 # Samsung Lollipop Tool
+
+Develop: https://travis-ci.org/Intrainos/SamsungLTool.svg?branch=develop
+
 Samsung Lollipop Hidden Menu and  Hidden Setting Tool
 
 Now on Devlopment.
