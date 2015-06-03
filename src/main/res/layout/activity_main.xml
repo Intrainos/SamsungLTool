@@ -61,7 +61,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Download Booster Setting for S4"
+        android:text="Download Booster Setting"
         android:id="@+id/gotoDownloadBoosterSetting"
         android:layout_below="@+id/gotoToolBoxSetting"
         android:layout_alignStart="@+id/gotoToolBoxSetting"
